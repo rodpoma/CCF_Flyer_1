@@ -5,7 +5,11 @@
     <title>CCF Flyer</title>
     <style>
       * {
-        font-family: sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 1200px;
+      }
+      #main {
+        border: #0b0633 solid 10px;
       }
       #logo {
         height: 70px;
@@ -17,6 +21,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 10px;
       }
       #contact {
         color: white;
@@ -27,7 +32,7 @@
       #slogan {
         text-align: center;
         margin: 35px;
-        font-size: 1.5vw;
+        font-size: 1vw;
       }
       #tables {
         background-color: #0b0633;
@@ -35,11 +40,53 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      #group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
       #markers {
-        margin: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1vw;
+      }
+      #markers2 {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1vw;
+      }
+      #markers3 {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
       #table {
+        margin: 10px;
+        border: white solid 1px;
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      #tombstones {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1vh;
+      }
+      #stone {
+        background-color: white;
+        border: #0b0633 solid 4px;
+        padding: 20px;
         margin: 10px;
       }
     </style>
@@ -71,7 +118,7 @@
       </div>
       <div id="tables">
         <div id="table">
-          <span id="markers">Type of financing</span>
+          <span id="markers">Type of Financing :</span>
           <div>
             <ul>
               <li>Fully amortizing capital leases.</li>
@@ -82,10 +129,10 @@
           </div>
         </div>
         <div id="table">
-          <span id="markers">Collaterl/Equipment</span>
+          <span id="markers">Collateral/Equipment :</span>
           <div>
             <span>
-              New and used assets. Useful Economic Life of assets must be
+              New and used assets. Useful Economic Life <br />of assets must be
               greater than lease term.</span
             >
             <ul>
@@ -106,33 +153,35 @@
         <div id="table">Underwriting Size : $1,000,000 to $20,000,000</div>
         <div id="table">Lease Term : 2 - 7 Years</div>
       </div>
-      <div id="tombstones">
-        <span>Recent Transactions</span>
-        <div id="stone">
-          <span id="markers">$6,700,000 for New Machine Tools</span>
-          <ul>
-            <li>Aerospace & Defense Supplier</li>
-            <li>CoVid Impacted Financial Performance</li>
-            <li>48 Month $1 Out Lease</li>
-          </ul>
-        </div>
-        <div id="stone">
-          <span id="markers"
-            >$3,500,000 for New Plastic Injection Molding Machines</span
-          >
-          <ul>
-            <li>Recent Start-Up</li>
-            <li>Additional Collateral + PG</li>
-            <li>36 Months $1 Out Lease</li>
-          </ul>
-        </div>
-        <div id="stone">
-          <span id="markers">$2,000,000 for Food Production Equipment</span>
-          <ul>
-            <li>Recent Acquisition</li>
-            <li>Debt 6x EBI TDA</li>
-            <li>36 Motnhs $1 Out Lease</li>
-          </ul>
+      <div id="group">
+        <span id="markers2">Recent Transactions</span>
+        <div id="tombstones">
+          <div id="stone">
+            <span id="markers3">$6,700,000 for New Machine Tools</span>
+            <ul>
+              <li>Aerospace & Defense Supplier</li>
+              <li>CoVid Impacted Financial Performance</li>
+              <li>48 Month $1 Out Lease</li>
+            </ul>
+          </div>
+          <div id="stone">
+            <span id="markers3"
+              >$3,500,000 for New Plastic Injection Molding Machines</span
+            >
+            <ul>
+              <li>Recent Start-Up</li>
+              <li>Additional Collateral + PG</li>
+              <li>36 Months $1 Out Lease</li>
+            </ul>
+          </div>
+          <div id="stone">
+            <span id="markers3">$2,000,000 for Food Production Equipment</span>
+            <ul>
+              <li>Recent Acquisition</li>
+              <li>Debt 6x EBI TDA</li>
+              <li>36 Motnhs $1 Out Lease</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
