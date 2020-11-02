@@ -16,19 +16,6 @@
         width: auto;
         margin-left: 2vw;
       }
-      @media screen and (min-width: 1200px) {
-        #slogan {
-          text-align: center;
-          margin: 35px;
-          font-size: 1vw;
-        }
-      }
-      @media screen and (max-width: 1200px) {
-        #slogan {
-          text-align: center;
-          margin: 35px;
-        }
-      }
 
       #heading {
         background-color: #0b0633;
@@ -103,6 +90,11 @@
         border: #0b0633 solid 4px;
         padding: 20px;
         margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
       }
       #photos {
         display: flex;
@@ -113,6 +105,20 @@
       #photo {
         width: 30%;
         border: #0b0633 solid 5px;
+      }
+      #photo2 {
+        max-height: 200px;
+        min-width: 150px;
+        max-width: 200px;
+        min-width: 150px;
+        justify-self: center;
+        border: #0b0633 solid 2px;
+      }
+      #list {
+        display: flex;
+        justify-content: center;
+        text-align: start;
+        flex-direction: column;
       }
     </style>
   </head>
@@ -142,14 +148,14 @@
         >
       </div>
       <div id="photos">
-        <img id="photo" src="./Machine picture 1.jpg" alt="pic1" />
+        <img id="photo" src="./Google-Server-Rooms.jpeg" alt="pic1" />
         <img id="photo" src="./Machine picture 2.jpg" alt="pic2" />
         <img id="photo" src="./Machine picture 4.jpg" alt="pic3" />
       </div>
 
       <div id="tables">
         <div id="table">
-          <span id="markers">Type of Financing :</span>
+          <strong id="markers">Type of Financing :</strong>
           <div>
             <ul>
               <li>Fully amortizing capital leases.</li>
@@ -160,7 +166,7 @@
           </div>
         </div>
         <div id="table">
-          <span id="markers">Collateral/Equipment :</span>
+          <strong id="markers">Collateral/Equipment :</strong>
           <div>
             <span>
               New and used assets. Useful Economic Life <br />of assets must be
@@ -181,37 +187,50 @@
             >
           </div>
         </div>
-        <div id="table">Underwriting Size : $1,000,000 to $20,000,000</div>
-        <div id="table">Lease Term : 2 - 7 Years</div>
+        <div id="table">
+          <strong>Underwriting Size :</strong>$1,000,000 to $20,000,000
+        </div>
+        <div id="table"><strong>Lease Term :</strong> 2 - 7 Years</div>
       </div>
       <div id="group">
         <span id="markers2">Recent Transactions</span>
         <div id="tombstones">
           <div id="stone">
-            <span id="markers3">$6,700,000 for New Machine Tools</span>
-            <ul>
-              <li>Aerospace & Defense Supplier</li>
-              <li>CoVid Impacted Financial Performance</li>
-              <li>48 Month $1 Out Lease</li>
-            </ul>
+            <img id="photo2" src="./New Machine Tools.jpg" alt="pic1" />
+            <div id="list">
+              <strong id="markers3">$6,700,000 for New Machine Tools</strong>
+              <ul>
+                <li>Aerospace & Defense Supplier</li>
+                <li>CoVid Impacted Financial Performance</li>
+                <li>48 Month $1 Out Lease</li>
+              </ul>
+            </div>
           </div>
           <div id="stone">
-            <span id="markers3"
-              >$3,500,000 for New Plastic Injection Molding Machines</span
-            >
-            <ul>
-              <li>Recent Start-Up</li>
-              <li>Additional Collateral + PG</li>
-              <li>36 Months $1 Out Lease</li>
-            </ul>
+            <img id="photo2" src="./Machine picture 1.jpg" alt="pic1" />
+            <div id="list">
+              <strong id="markers3"
+                >$3,500,000 for New Plastic Injection Molding Machines</strong
+              >
+              <ul>
+                <li>Recent Start-Up</li>
+                <li>Additional Collateral + PG</li>
+                <li>36 Months $1 Out Lease</li>
+              </ul>
+            </div>
           </div>
           <div id="stone">
-            <span id="markers3">$2,000,000 for Food Production Equipment</span>
-            <ul>
-              <li>Recent Acquisition</li>
-              <li>Debt 6x EBI TDA</li>
-              <li>36 Motnhs $1 Out Lease</li>
-            </ul>
+            <img id="photo2" src="./Food Production Equip.jpg" alt="pic1" />
+            <div id="list">
+              <strong id="markers3"
+                >$2,000,000 for Food Production Equipment</strong
+              >
+              <ul>
+                <li>Recent Acquisition</li>
+                <li>Debt 6x EBI TDA</li>
+                <li>36 Motnhs $1 Out Lease</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
